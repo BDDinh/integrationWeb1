@@ -1,99 +1,128 @@
 /* style.css */
-/* Programmé par BD Dinh */ 
+/* Programmé par BD Dinh */
 /* Le 14 novembre 2019 */
 
 html {
-    background-color: rgb(0, 0, 0);
-    /* background: blueviolet; */
+  background-color: rgb(0, 0, 0);
+  /* background: blueviolet; */
 }
 
-body{
-    color: rgb(192, 192, 192);
-    width: 900px;              /* Largeur du site */
-    margin: auto;              /* pour centrer le site en largeur */
-    background-image: url("../medias/image_background_05.jpg");
-    background-size: 100%;
-    background-repeat: repeat-y;
-
-
+body {
+  background-color: rgb(192, 192, 192);
+  width: 900px;
+  /* Largeur du site */
+  margin: auto;
+  /* pour centrer le site en largeur */
+  background-image: url("../medias/image_background_05.jpg");
+  background-size: 100%;
+  background-repeat: repeat-y;
 }
+
 
 /* ----------------------- */
 /* ----------------------- */
-/* Pour les h! et p */
+/* Pour polices de caractère */
+
+@font-face {
+  font-family: maPolice;
+  src: url("../font/ShinySignature.ttf");
+}
+
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('  https://fonts.google.com/specimen/Sansita+Swashed');
+  /* IE9 Compat Modes */
+}
+
+
+
+/* ----------------------- */
+/* ----------------------- */
+/* Pour les A, h et p */
+
+A {
+  text-decoration: none;
+}
+
 
 p {
-    font-size: 14px;
-    text-align: justify;
+  font-family: MyWebFont font-size: 14px;
+  text-align: justify;
+  color: rgb(124, 46, 20);
 }
 
-h1, h2 {
-    color: rgb(194, 102, 17);
-    text-align: center;
+h1,
+h2,
+h3 {
+  font-family: maPolice;
+  color: rgb(194, 102, 17);
+  text-align: center;
 }
-
 
 h1 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 h2 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 
-h1 + h1 {
-    color: blue;
+h1+h1 {
+  color: blue;
 }
 
 /* ----------------------- */
 /* ----------------------- */
 /* Pour les liens */
 
-  a:link {
-    color: rgb(102, 203, 250);
-  }
-  
-  /* visited link */
-  a:visited {
-    color: rgb(1, 88, 146);
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: hotpink;
-  }
-  
-  /* selected link */
-  a:active {
-    color: blue;
-  }
+a:link {
+  color: rgb(102, 203, 250);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(1, 88, 146);
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
 
 /* ----------------------- */
 /* ----------------------- */
 /* Pour les liens */
 
-  img {
-    width: 300px;
-    border-radius: 10px;
-    opacity: 0.5;
-  }
-  
-  img:hover {
-    -moz-box-shadow: 0 0 10px #ccc;
-    -webkit-box-shadow: 0 0 10px #ccc;
-    box-shadow: 0 0 10px #ccc;
-  }
+img {
+  width: 300px;
+  border-radius: 1rem;
+  opacity: 0.5;
+  display: block;
+  margin: auto;
+}
+
+img:hover {
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 1rem #ccc;
+}
 
 /* ----------------------- */
 /* ----------------------- */
 /* Pour la table */
 
 table {
-    border: 1px solid black;
-    color: rgb(126, 161, 0);
-    font-size: 10px;
-  }
+  border: 1px solid black;
+  color: rgb(126, 161, 0);
+  font-size: 10px;
+}
 
 
 /* ----------------------- */
@@ -101,6 +130,6 @@ table {
 /* Pour la liste */
 
 ul {
-    color: rgb(3, 164, 204);
-    font-size: 15px;
+  color: rgb(3, 164, 204);
+  font-size: 15px;
 }
